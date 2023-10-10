@@ -8,7 +8,8 @@ using namespace std;
 
 int main()
 {
-    int generacions = 0;
+    int generacions = 0, conill = 0, guineu = 0;
+    float creixementConill = 0, mortalitatConill = 0, creixementGuineu = 0, mortalitatGuineu = 0;
     cout << "Benvingut al FoxRabbit! Si us plau, quantes generacions vols estudiar?" << endl;
     cin >> generacions;
     while (generacions <= 0)
@@ -17,6 +18,53 @@ int main()
         cin >> generacions;
     }
 
+    cout << "Introdueix el nombre inicial de conills:" << endl;
+    cin >> conill;
+    while (conill <= 0)
+    {
+        cout << "Error. Introdueix el nombre inicial de conills:" << endl;
+        cin >> conill;
+    }
+
+    cout << "Introdueix el nombre inicial de guineus:" << endl;
+    cin >> guineu;
+    while (guineu <= 0)
+    {
+        cout << "Error. Introdueix el nombre inicial de guineus:" << endl;
+        cin >> guineu;
+    }
+
+    cout << "Introdueix el factor de creixement dels conills:" << endl;
+    cin >> creixementConill;
+    while (creixementConill <= 0)
+    {
+        cout << "Error. Introdueix el factor de creixement dels conills:" << endl;
+        cin >> creixementConill;
+    }
+
+    cout << "Introdueix el factor depredador guineu-conill:" << endl;
+    cin >> mortalitatConill;
+    while (mortalitatConill <= 0)
+    {
+        cout << "Error. Introdueix el factor depredador guineu-conill:" << endl;
+        cin >> mortalitatConill;
+    }
+
+    cout << "Introdueix el factor mortalitat de les guineus:" << endl;
+    cin >> mortalitatGuineu;
+    while (mortalitatGuineu <= 0)
+    {
+        cout << "Error. Introdueix el factor mortalitat de les guineus:" << endl;
+        cin >> mortalitatGuineu;
+    }
+
+    cout << "Introdueix el factor de creixement de les guineus:" << endl;
+    cin >> creixementGuineu;
+    while (creixementGuineu <= 0)
+    {
+        cout << "Error. Introdueix el factor de creixement de les guineus:" << endl;
+        cin >> creixementGuineu;
+    }
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
